@@ -1,0 +1,12 @@
+# Ignorar el entorno virtual
+bot-env/
+
+# Ignorar archivos de configuración y variables de entorno
+.env
+*.env
+
+# Ignorar archivos compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+
