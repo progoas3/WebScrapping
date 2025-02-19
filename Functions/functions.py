@@ -1,14 +1,19 @@
+import requests
+from bs4 import BeautifulSoup
+
+class ExtractData:
+    
+    def __init__(self, url):
+        self.url = url
+        
+    def imprimir(self):
+        print(f"{self.url}")
+        
+
 class Main:
     
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-        self.sum = 0
+    def __init__(self, url):
+        self.extractor = ExtractData(url)
         
-    
-    def suma(self, x, y):
-       self.sum += self.a + self.b + x + y
-       
-   
-    def imprimir(self):
-       return print(f"{self.sum}")
+    def pr(self):
+        self.extractor.imprimir()
