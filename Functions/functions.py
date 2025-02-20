@@ -9,7 +9,13 @@ class ExtractData:
         
     def getTitle(self, r):
         soap = BeautifulSoup(r.text, "lxml")
-        return print(soap.select(self.tag)[0].getText())
+        elements = soap.select(self.tag)
+        blo = []
+        
+        for element in elements:
+            print(element.getText())
+            
+        return [element.getText() for element in elements]
         
     def connect(self):
         r = requests.get(self.url)
