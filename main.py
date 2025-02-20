@@ -2,8 +2,8 @@ from Functions.functions import *
 
 
 def main():
-    connection = Main("https://httpbin.org/basic-auth/user/pass")
-    connection.pr()
+    connection = Main("https://escueladirecta-blog.blogspot.com/", "title")
+    connection.extract()
 
 if __name__ == "__main__":
     main()
